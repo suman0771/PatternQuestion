@@ -214,9 +214,146 @@ cout<<"Pattern 5: \n";
         i++;
         cout<<endl;
     }
-  //or 
-
   
+  //or without using extra variable
+  
+    i=1;
+    while(i<=n){
+        int j=i;
+        while(j<2*i){
+            cout<<j<<" ";
+            j++;
+        }
+        i++;
+        cout<<endl;
+    }
+  
+  
+  cout<<"Pattern 11: \n";
+
+    /*  n=4
+      1
+      2 1
+      3 2 1 
+      4 3 2 1
+*/
+    i=1;
+    while(i<=n){
+        int j=i;
+        while(j>=1){
+            cout<<j<<" ";
+            j--;
+        }
+        i++;
+        cout<<endl;
+    }
+  
+  //or
+   i=1;
+    while(i<=n){
+        int j=1;
+        while(j<=i){
+            cout<<(i-j+1)<<" ";
+            j++;
+        }
+        i++;
+        cout<<endl;
+    }
+  
+ cout<<"Pattern 12: \n";
+
+    /*  n=4
+        A A A A
+        B B B B 
+        C C C C
+        D D D D
+*/
+  
+    i=1;
+    char ch =65;
+    while(i<=n){
+        int j=1;
+        
+        while(j<=n){
+            cout<<ch<<" ";
+            
+            j++;
+        }
+        i++;
+        ch++;
+        cout<<endl;
+    }
+  
+  //or
+    i=1;
+    char cha;
+    while(i<=n){
+        int j=1;
+        while(j<=n){
+            cha='A'+i-1;
+            cout<<cha<<" ";
+            j++;
+        }
+        i++;
+        cout<<endl;
+    }
+  
+   cout<<"Pattern 13: \n";
+
+    /*  n=4
+        A B C D
+        A B C D
+        A B C D
+        A B C D
+*/
+  
+  i=1;
+    while(i<=n){
+        int j=1;
+        ch=65;
+        while(j<=n){
+            cout<<ch<<" ";
+            ch++;
+            j++;
+        }
+        i++;
+        cout<<endl;
+    }
+  //or
+    i=1;
+    char c;
+    while(i<=n){
+        int j=1;
+        while(j<=n){
+            c='A'+j-1;
+            cout<<c<<" ";
+            j++;
+        }
+        i++;
+        cout<<endl;
+    }
+  
+  cout<<"Pattern 14: \n";
+
+    /*  n=4
+        A B C D
+        E F G H
+        I J K L
+        M N O P 
+*/
+  
+  i=1;
+    char chara=65;
+    while(i<=n){
+        int j=1;
+        while(j<=n){
+            cout<<chara<<" ";
+            chara++;
+            j++;
+        }
+        i++;
+        cout<<endl;
+    }
   
   
   
